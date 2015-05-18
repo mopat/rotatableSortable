@@ -42,5 +42,27 @@ $('#my-list').rotatableSortable({
                 }
             });
 ```
+## Possible Parameters
+```javascript
+// initialize with id, class or ul
+$('ul').rotatableSortable({
+                delegates: 'li',  // id, class or ul
+                rotation: 270, // 0, 90, 180 or 270 degrees
+                delay: 1500, // time in ms for tap or click to start sorting
+                scrollTolerance: 150, // upper and bottom border in px of the list to start scrolling
+                scrollIntervalDuration: 100, // time in ms of scroll intervall duration
+                scrollPx: 100, // number of pixels to scroll up or down
+                sortEnd: function () {
+                    //executed when mouse or touch is released
+                }
+            });
+```
 
-
+### Defaults
+```javascript
+rotation: 0
+delay: 1000
+scrollIntervalDuration: 200
+scrollTolerance: 100
+scrollPx: 100
+```
