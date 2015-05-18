@@ -60,6 +60,7 @@ $('ul').rotatableSortable({
 
 ### Defaults
 ```javascript
+delegates: "li"
 rotation: 0
 delay: 1000
 scrollIntervalDuration: 200
