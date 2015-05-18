@@ -1,7 +1,7 @@
 # rotatableSortable
 A sortable jquery Plugin to sort lists in rotated Containers. Usage is possible with touch and mouse for Desktop, Tablet and Smartphone!
 
-##Usage##<script src="rotatableSortable.js"></script>
+##Usage
 Include the script in your website first. Add this script tag after your jQuery inclusion.
 ```javascript
 <script src="libs/rotatableSortable.js"></script>
@@ -17,29 +17,30 @@ $('#my-list').rotatableSortable({
             });
 ```
 
-##Remove##
+##Remove
 To remove the sortable from your list use the following code:
 ```javascript
 $("#my-list").destroy({
                 delegates: ".my-list-li"
             });
 ```
-##Switch on/off##
-To switch the sort function on or off first remove and add sort function again.
-```javascript
-// add sort function
-$('#my-list').rotatableSortable({
-                delegates: '.my-list-li',
-                rotation: 180,
-                sortEnd: function () {
-                    sortEndHandler();
-                }
-            });
-```
-
+##Change rotation of the list
+To change rotation of your list first destroy rotatableSortable then add again.
 ```javascript
 // remove sort function
 $("#my-list").destroy({
                 delegates: ".my-list-li"
             });
 ```
+```javascript
+// add sort function with list rotation of 270 degrees
+$('#my-list').rotatableSortable({
+                delegates: '.my-list-li',
+                rotation: 270,
+                sortEnd: function () {
+                    sortEndHandler();
+                }
+            });
+```
+
+
